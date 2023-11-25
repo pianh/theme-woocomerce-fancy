@@ -1,0 +1,91 @@
+2023-11-25T07:40:51+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "fancy_lab_add_sidebar_tags" not found or invalid function name in C:\laragon\www\fancy\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\laragon\www\fancy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 C:\laragon\www\fancy\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\laragon\www\fancy\wp-content\plugins\woocommerce\templates\archive-product.php(29): do_action('woocommerce_bef...')
+#3 C:\laragon\www\fancy\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#4 C:\laragon\www\fancy\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#5 C:\laragon\www\fancy\index.php(17): require('C:\\laragon\\www\\...')
+#6 {main}
+  thrown in C:\laragon\www\fancy\wp-includes\class-wp-hook.php on line 324
+
+2023-11-25T08:37:29+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "the_exerpt" not found or invalid function name in C:\laragon\www\fancy\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\laragon\www\fancy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 C:\laragon\www\fancy\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\laragon\www\fancy\wp-content\plugins\woocommerce\templates\content-product.php(57): do_action('woocommerce_aft...')
+#3 C:\laragon\www\fancy\wp-includes\template.php(792): require('C:\\laragon\\www\\...')
+#4 C:\laragon\www\fancy\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\laragon\\www\\...', false)
+#5 C:\laragon\www\fancy\wp-content\plugins\woocommerce\templates\single-product\related.php(43): wc_get_template_part('content', 'product')
+#6 C:\laragon\www\fancy\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\laragon\\www\\...')
+#7 C:\laragon\www\fancy\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2080): wc_get_template('single-product/...', Array)
+#8 C:\laragon\www\fancy\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2043): woocommerce_related_products(Array)
+#9 C:\laragon\www\fancy\wp-includes\class-wp-hook.php(324): woocommerce_output_related_products('')
+#10 C:\laragon\www\fancy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#11 C:\laragon\www\fancy\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#12 C:\laragon\www\fancy\wp-content\plugins\woocommerce\templates\content-single-product.php(72): do_action('woocommerce_aft...')
+#13 C:\laragon\www\fancy\wp-includes\template.php(792): require('C:\\laragon\\www\\...')
+#14 C:\laragon\www\fancy\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\laragon\\www\\...', false)
+#15 C:\laragon\www\fancy\wp-content\plugins\woocommerce\templates\single-product.php(37): wc_get_template_part('content', 'single-product')
+#16 C:\laragon\www\fancy\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#17 C:\laragon\www\fancy\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#18 C:\laragon\www\fancy\index.php(17): require('C:\\laragon\\www\\...')
+#19 {main}
+  thrown in C:\laragon\www\fancy\wp-includes\class-wp-hook.php on line 324
+
+2023-11-25T08:37:34+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "the_exerpt" not found or invalid function name in C:\laragon\www\fancy\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\laragon\www\fancy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 C:\laragon\www\fancy\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\laragon\www\fancy\wp-content\plugins\woocommerce\templates\content-product.php(57): do_action('woocommerce_aft...')
+#3 C:\laragon\www\fancy\wp-includes\template.php(792): require('C:\\laragon\\www\\...')
+#4 C:\laragon\www\fancy\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\laragon\\www\\...', false)
+#5 C:\laragon\www\fancy\wp-content\plugins\woocommerce\templates\archive-product.php(70): wc_get_template_part('content', 'product')
+#6 C:\laragon\www\fancy\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#7 C:\laragon\www\fancy\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#8 C:\laragon\www\fancy\index.php(17): require('C:\\laragon\\www\\...')
+#9 {main}
+  thrown in C:\laragon\www\fancy\wp-includes\class-wp-hook.php on line 324
+
+2023-11-25T08:38:19+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "the_exerpt" not found or invalid function name in C:\laragon\www\fancy\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\laragon\www\fancy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 C:\laragon\www\fancy\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\laragon\www\fancy\wp-content\plugins\woocommerce\templates\content-product.php(57): do_action('woocommerce_aft...')
+#3 C:\laragon\www\fancy\wp-includes\template.php(792): require('C:\\laragon\\www\\...')
+#4 C:\laragon\www\fancy\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\laragon\\www\\...', false)
+#5 C:\laragon\www\fancy\wp-content\plugins\woocommerce\templates\archive-product.php(70): wc_get_template_part('content', 'product')
+#6 C:\laragon\www\fancy\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#7 C:\laragon\www\fancy\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#8 C:\laragon\www\fancy\index.php(17): require('C:\\laragon\\www\\...')
+#9 {main}
+  thrown in C:\laragon\www\fancy\wp-includes\class-wp-hook.php on line 324
+
+2023-11-25T08:38:21+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "the_exerpt" not found or invalid function name in C:\laragon\www\fancy\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\laragon\www\fancy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 C:\laragon\www\fancy\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\laragon\www\fancy\wp-content\plugins\woocommerce\templates\content-product.php(57): do_action('woocommerce_aft...')
+#3 C:\laragon\www\fancy\wp-includes\template.php(792): require('C:\\laragon\\www\\...')
+#4 C:\laragon\www\fancy\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\laragon\\www\\...', false)
+#5 C:\laragon\www\fancy\wp-content\plugins\woocommerce\templates\archive-product.php(70): wc_get_template_part('content', 'product')
+#6 C:\laragon\www\fancy\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#7 C:\laragon\www\fancy\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#8 C:\laragon\www\fancy\index.php(17): require('C:\\laragon\\www\\...')
+#9 {main}
+  thrown in C:\laragon\www\fancy\wp-includes\class-wp-hook.php on line 324
+
+2023-11-25T08:38:26+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "the_exerpt" not found or invalid function name in C:\laragon\www\fancy\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\laragon\www\fancy\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 C:\laragon\www\fancy\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\laragon\www\fancy\wp-content\plugins\woocommerce\templates\content-product.php(57): do_action('woocommerce_aft...')
+#3 C:\laragon\www\fancy\wp-includes\template.php(792): require('C:\\laragon\\www\\...')
+#4 C:\laragon\www\fancy\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\laragon\\www\\...', false)
+#5 C:\laragon\www\fancy\wp-content\plugins\woocommerce\templates\archive-product.php(70): wc_get_template_part('content', 'product')
+#6 C:\laragon\www\fancy\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#7 C:\laragon\www\fancy\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#8 C:\laragon\www\fancy\index.php(17): require('C:\\laragon\\www\\...')
+#9 {main}
+  thrown in C:\laragon\www\fancy\wp-includes\class-wp-hook.php on line 324
+

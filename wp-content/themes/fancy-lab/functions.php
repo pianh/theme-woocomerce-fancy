@@ -40,9 +40,9 @@
 	        $content_width = 600;
         }
     }
-
     // Hook the fancy_lab_config function to the after_setup_theme action
     add_action('after_setup_theme', 'fancy_lab_config', 0);
 
+    require get_template_directory() . '/inc/wc-modifications.php';
 
 ?>
