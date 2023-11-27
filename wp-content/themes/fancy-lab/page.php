@@ -30,7 +30,7 @@ get_header();
                             if(have_posts()):
                             while(have_posts()) : the_post();
                                 ?>
-                                <article style="padding: 0">
+                                <article class="col" style="padding: 0">
                                     <h1><?php the_title() ?></h1>
                                     <p><?php the_content(); ?></p>
                                 </article>

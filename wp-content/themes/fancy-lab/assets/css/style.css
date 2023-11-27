@@ -13,6 +13,10 @@ a {
     text-decoration: none;
 }
 
+body {
+    font-family: "Seaweed Script", cursive;
+    font-family: "Rajdhani", sans-serif;
+}
 /* CSS Header */
 .main-menu ul {
     list-style: none;
@@ -37,6 +41,37 @@ a {
     color: #fff;
     background-color: rgb(66, 146, 232);
     border-radius: 7px;
+}
+
+ul.dropdown-menu {
+    display: none;
+}
+
+a#menu-item-dropdown-99:hover > .dropdown-menu {
+    display: block;
+}
+
+/* #menu-fancy-lab-main-menu .dropdown-toggle:hover > .dropdown-menu,
+#menu-fancy-lab-main-menu .dropup-toggle:hover > .dropdown-menu {
+    display: block;
+} */
+
+/* Search Form */
+.search-form button {
+    background-image: url("assets/img/search.svg");
+    height: 23px;
+    width: 23px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+}
+.search-form input[type="search"] {
+    background-color: #fff;
+    border: none;
+    font-weight: 500;
+    font-size: 110%;
+    padding: 0.3rem 1rem;
+    margin-right: 0.3rem;
 }
 
 /* CSS footer */
@@ -176,6 +211,51 @@ a {
 .woocommerce nav.woocommerce-pagination ul li span.current {
     background: #743cbf;
     color: #ffffff;
+}
+/* Cart */
+a.components-button.wc-block-components-button.wp-element-button.wc-block-cart__submit-button.contained {
+    min-height: 3em;
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: red !important;
+    color: #fff;
+}
+
+/* Cart */
+.woocommerce-cart table.cart td.actions .coupon .input-text {
+    width: 150px;
+}
+.cart .cart-icon {
+    background: url("assets/img/cart.svg");
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.cart .items {
+    background: #ca2424;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Checkout */
+.woocommerce form .form-row {
+    display: block;
+}
+.woocommerce-checkout #customer_details {
+    margin-bottom: 20px;
+}
+.woocommerce table.shop_table {
+    border-collapse: collapse;
+}
+.woocommerce table.shop_table thead {
+    background-color: #d2335b;
+    color: #fff;
 }
 
 /* General */

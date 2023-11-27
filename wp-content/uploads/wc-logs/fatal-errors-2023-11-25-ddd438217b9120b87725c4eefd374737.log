@@ -89,3 +89,23 @@ Stack trace:
 #9 {main}
   thrown in C:\laragon\www\fancy\wp-includes\class-wp-hook.php on line 324
 
+2023-11-25T18:02:59+00:00 CRITICAL Uncaught Error: Failed opening required 'C:\laragon\www\fancy/wp-content/themes/fancy-lab/class-wp-bootstrap-navwalker.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\fancy\wp-content\themes\fancy-lab\functions.php:2
+Stack trace:
+#0 C:\laragon\www\fancy\wp-settings.php(611): include()
+#1 C:\laragon\www\fancy\wp-config.php(105): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\fancy\wp-load.php(50): require_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\fancy\wp-blog-header.php(13): require_once('C:\\laragon\\www\\...')
+#4 C:\laragon\www\fancy\index.php(17): require('C:\\laragon\\www\\...')
+#5 {main}
+  thrown in C:\laragon\www\fancy\wp-content\themes\fancy-lab\functions.php on line 2
+
+2023-11-25T18:03:00+00:00 CRITICAL Uncaught Error: Failed opening required 'C:\laragon\www\fancy/wp-content/themes/fancy-lab/class-wp-bootstrap-navwalker.php' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\fancy\wp-content\themes\fancy-lab\functions.php:2
+Stack trace:
+#0 C:\laragon\www\fancy\wp-settings.php(611): include()
+#1 C:\laragon\www\fancy\wp-config.php(105): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\fancy\wp-load.php(50): require_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\fancy\wp-blog-header.php(13): require_once('C:\\laragon\\www\\...')
+#4 C:\laragon\www\fancy\index.php(17): require('C:\\laragon\\www\\...')
+#5 {main}
+  thrown in C:\laragon\www\fancy\wp-content\themes\fancy-lab\functions.php on line 2
+

@@ -1,0 +1,14 @@
+2023-11-26T07:21:59+00:00 CRITICAL Uncaught Error: Call to a member function walk() on string in C:\laragon\www\fancy\wp-includes\nav-menu-template.php:616
+Stack trace:
+#0 C:\laragon\www\fancy\wp-includes\nav-menu-template.php(236): walk_nav_menu_tree(Array, 1, Object(stdClass))
+#1 C:\laragon\www\fancy\wp-content\themes\fancy-lab\header.php(30): wp_nav_menu(Object(stdClass))
+#2 C:\laragon\www\fancy\wp-includes\template.php(790): require_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\fancy\wp-includes\template.php(725): load_template('C:\\laragon\\www\\...', true, Array)
+#4 C:\laragon\www\fancy\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#5 C:\laragon\www\fancy\wp-content\themes\fancy-lab\front-page.php(2): get_header()
+#6 C:\laragon\www\fancy\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#7 C:\laragon\www\fancy\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#8 C:\laragon\www\fancy\index.php(17): require('C:\\laragon\\www\\...')
+#9 {main}
+  thrown in C:\laragon\www\fancy\wp-includes\nav-menu-template.php on line 616
+
