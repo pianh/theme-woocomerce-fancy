@@ -3,7 +3,7 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fancy Lab</title>
     <?php wp_head(); ?>
 </head>
 <body <?php echo body_class(); ?>>
@@ -17,11 +17,22 @@
             <section class="top-bar">
                 <div class="container">
                     <div class="row">
-                        <div class="brand col-md-3 col-12 col-lg-2 text-center text-md-left">LOGO</div>
+                        <div class="col-12 col-md-3 col-lg-2 brand text-center text-md-left">
+							<a href="<?php echo esc_url( home_url('/') );?>">
+								<?php 
+	                            if( has_custom_logo() ):
+	                                the_custom_logo();
+	                            else:    
+	                            ?>
+	                                <p class="site-title"><?php bloginfo( 'title' );?></p>
+	                                <span ><?php bloginfo( 'description' );?></span>   
+	                            <?php endif;?>
+							</a>
+						</div>
                         <div class="second-column col-md-9 col-12 col-lg-10">
                             <div class="row">
                                 <?php if(class_exists('WooCommerce')): ?>
-                                <div class="account col-12">
+                                <div class="account col-12 d-flex justify-content-between">
                                     <div class="navbar-expand">
                                         <ul class="navbar-nav float-left">
                                             <?php if(is_user_logged_in()) : ?>
@@ -46,24 +57,26 @@
                                 </div>
                                 <?php endif; ?>
                                 <div class="col-12">
-                                    <nav class="main-menu navbar navbar-expand-md navbar-light bg-light" role="navigation">
-                                            <button class="navbar-toggler ml-auto" style="margin-left: auto" type="button" data-bs-toggle="collapse" data-bs-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
-                                            <span class="navbar-toggler-icon"></span>
-                                            </button>
-                                            <?php
-                                            wp_nav_menu( array(
-                                                'theme_location'    => 'fancy_lab_main_menu',
-                                                'depth'             => 3,
-                                                'container'         => 'div',
-                                                'container_class'   => 'collapse navbar-collapse',
-                                                'container_id'      => 'bs-example-navbar-collapse-1',
-                                                'menu_class'        => 'nav navbar-nav',
-                                                'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-                                                'walker'            => new WP_Bootstrap_Navwalker(),
-                                            ) );
-                                            ?>
-                                    </nav>
-                                </div>
+									<nav class="main-menu navbar navbar-expand-md navbar-light" role="navigation">
+								        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#bs-main-menu" aria-controls="bs-main-menu" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'fancy-lab' ) ?>">
+								            <span class="navbar-toggler-icon"></span>
+								        </button>									
+										<?php 
+											wp_nav_menu( 
+												array( 
+													'theme_location' 	=> 'fancy_lab_main_menu', 
+													'depth' 			=> 3,
+													'container'         => 'div',
+													'container_class'   => 'collapse navbar-collapse',
+													'container_id'      => 'bs-main-menu',
+													'menu_class'        => 'navbar-nav mr-auto',
+													'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+													'walker'            => new WP_Bootstrap_Navwalker(),
+												) 
+											); 
+										?>												
+									</nav>											
+								</div>
                             </div>
                         </div>
                     </div>

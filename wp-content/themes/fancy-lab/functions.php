@@ -1,15 +1,20 @@
 <?php
 
     require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
-
-
+    require_once get_template_directory() . '/inc/customizer.php';
         function load_assets() {
+            // Bootstrap javascript and css files
         wp_enqueue_style("bootstrapcss", get_theme_file_uri('/inc/bootstrap.min.css'), array(), "1.0", "all");
         wp_enqueue_style("awesome", "//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", array(), "1.0", "all");
+        // Main css file
         wp_enqueue_style("csscustom", get_theme_file_uri('/assets/css/style.css'), array(), "1.0.2", "all");
+        // Goole Font
         wp_enqueue_style("google-fonts", "https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Seaweed+Script&display=swap");
         
         wp_enqueue_script("bootstrap", get_theme_file_uri() . '/inc/bootstrap.min.js', array('jquery'), "5.0.0", true);
+        wp_enqueue_script("flexslider-jquery", get_theme_file_uri() . '/inc/flexslider/jquery.flexslider-min.js', array('jquery'), "5.0.0", true);
+        wp_enqueue_style("flexslidercss", get_theme_file_uri('/inc/flexslider/flexslider.css'), array(), "1.0.2", "all");
+        wp_enqueue_script("jquery-js", get_theme_file_uri() . '/inc/flexslider/flexslider.js', array('jquery'), "5.0.0", true);
         // wp_enqueue_script("index", get_theme_file_uri() . '/build/index.js', array('jquery'), '1.0.2', true);
         // wp_localize_script("index", 'smartEduData', array('root_url' => get_site_url()));
     }
@@ -40,9 +45,23 @@
         add_theme_support('wc-product-gallery-zoom');
         add_theme_support('wc-product-gallery-lightbox');
         add_theme_support('wc-product-gallery-slider');
+
+        add_theme_support('custom-logo', array(
+             	'height'               => 85,
+		        'width'                => 160,
+		        'flex-height'          => true,
+		        'flex-width'           => true,
+          ));
+        
+        add_theme_support('post-thumbnails');  
+        
+        // Config image  
+        add_image_size( 'fancy-lab-slider', 1920, 800, array( 'center', 'center' ) );
+        add_image_size( 'fancy-lab-blog', 760, 540, array( 'center', 'center' ) );
         if ( ! isset( $content_width ) ) {
 	        $content_width = 600;
         }
+        add_theme_support('title-tag');
     }
     // Hook the fancy_lab_config function to the after_setup_theme action
     add_action('after_setup_theme', 'fancy_lab_config', 0);

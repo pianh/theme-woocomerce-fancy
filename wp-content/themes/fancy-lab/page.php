@@ -29,12 +29,7 @@ get_header();
                         <?php
                             if(have_posts()):
                             while(have_posts()) : the_post();
-                                ?>
-                                <article class="col" style="padding: 0">
-                                    <h1><?php the_title() ?></h1>
-                                    <p><?php the_content(); ?></p>
-                                </article>
-                                <?php
+                                get_template_part( 'template-parts/content','page' );
                             endwhile;
                             else:
                                 ?>
